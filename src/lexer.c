@@ -42,3 +42,26 @@ state2: ch = nextChar;
 state3:
 
 */
+
+/* x.yE±zの形式の浮動小数点数を読み込む */
+/*
+int b;              // xyを整数と見たかず
+int e;              // yの桁数
+int i;              // zの値
+char sign;          // 指数の符号
+
+statei: b = 0; e = 0; i = 0;
+    if(ch == '.') {
+        ch = nextChar;
+        if(charClassT[ch] != digit) error();
+        b = ch - '0'; e = 1;
+    } else if(charClassT[ch] ==digit) {
+        do {
+            b = 10 * b + ch - '0';
+            ch = nextChar();
+        } while(charClassT[ch] == digit);
+        if(ch == 'E') goto exp;
+    }
+
+exp: sign = '+'; ch = nextChar();
+*/
