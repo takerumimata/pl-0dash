@@ -5,25 +5,4 @@
 コードの書き方についてはあとで書く。
 
 puファイルをvscodeで開いて`opt+d`でプレビューが表示できる。（vscodeにPlantUMLのエクステンションは適宜ダウンロードすること）
-
-```plantuml
-@startuml read<name>
-state 1 {
-
-}
-
-state 2 {
-
-}
-
-state 3 {
-
-}
-[*] -down-> 1: <開始>
-1 -down-> 2: <英字>
-2 -down-> 3: <その他>
-2 --> 2: <英字> or <数字>
-' 2 --> 2: <数字>
-2 --> [*]: <終了>
-@enduml
-```
+`cmd+shift+p`でコマンドパレットを開いて`>plantuml`と入力。exportを選択してpngとかで保存する
