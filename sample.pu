@@ -1,0 +1,13 @@
+@startuml
+package Logger {
+    class Logger {
+        void __construct(Driver driver)
+        string log(string comment)
+    }
+    class Driver {
+        string output()
+    }
+}
+
+Logger ..> Driver
+@enduml
