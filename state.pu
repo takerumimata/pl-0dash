@@ -1,0 +1,19 @@
+@startuml read<name>
+state 1 {
+
+}
+
+state 2 {
+
+}
+
+state 3 {
+
+}
+[*] -right-> 1: <開始>
+1 -right-> 2: <英字>
+2 -right-> 3: <その他>
+2 -up-> 2: <英字>
+2 -down-> 2: <数字>
+2 --> [*]: <終了>
+@enduml
